@@ -7,13 +7,13 @@ type Props = {
 };
 
 export const PersonLink: React.FC<Props> = ({ person }) => {
-  const { personeId } = useParams();
+  const { personId } = useParams();
 
   return (
     <tr
       data-cy="person"
       className={classNames({
-        'has-background-warning': personeId === person.slug,
+        'has-background-warning': personId === person.slug,
       })}
     >
       <td>
